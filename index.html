@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="app">
-        <h1 v-if="list.length<10"><i class="fas fa-spinner"></i> Loading</h1>
-        <h1 v-else v-for="(mail, i) in list">{{list[i]}}</h1>
+        <small v-if="list.length<10"><i class="fas fa-spinner"></i> Loading</small>
+        <h2 v-else v-for="mail in list">{{mail}}</h2>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
